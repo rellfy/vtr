@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import styled from "styled-components";
-import blue from "../../media/blue.png";
+import blue from "../../resources/blue.png";
 
 export interface Props { }
 export interface State { }
