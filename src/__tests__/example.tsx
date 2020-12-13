@@ -1,6 +1,6 @@
 ﻿import React from 'react';
 import { render } from '@testing-library/react';
-import { Main } from "../components/Main";
+import Main from "../components/Main";
 
 test("Main says 'hello world'", () => {
     const { container } = render(<Main />);
