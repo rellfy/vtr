@@ -1,6 +1,6 @@
 {
     "name": "ptr",
-    "version": "0.0.1",
+    "version": "2020.1.0",
     "author": "Lorenzo Fontoura",
     "description": "Template for web clients using Typescript and React bundled with Parcel",
     "license": "MIT",
