@@ -5,6 +5,7 @@ Template for web clients using Typescript and React bundled with Parcel.
 - [Parcel][pc] for bundling
 - [Typescript][ts]
 - [React][re]
+- [Redux][red] for state management
 - [Styled components][sc]
 - [Jest][je] for testing, including:
     - [ts-jest][je.ts]
@@ -14,6 +15,7 @@ Template for web clients using Typescript and React bundled with Parcel.
 [pc]: https://github.com/parcel-bundler/parcel
 [ts]: https://github.com/microsoft/TypeScript
 [re]: https://github.com/facebook/react
+[red]: https://github.com/reduxjs/redux
 [sc]: https://github.com/styled-components/styled-components
 [je]: https://github.com/facebook/jest
 [je.ts]: https://github.com/kulshekhar/ts-jest
