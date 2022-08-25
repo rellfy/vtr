@@ -1,14 +1,10 @@
-﻿import React from "react";
-import ReactDOM from "react-dom";
+﻿import ReactDOM from "react-dom";
 import {BrowserRouter as Router} from "react-router-dom";
-
-const store = createStore(reducer);
+import Main from "./components/Main";
 
 ReactDOM.render(
     <Router>
-        <Provider store={store}>
-            <Main />
-        </Provider>
+        <Main />
     </Router>,
     document.getElementById("root")
 );

@@ -10,8 +10,8 @@
     "url": "https://github.com/rellfy/ptr/issues"
   },
   "scripts": {
-    "build": "parcel build ./src/index.html --out-dir dist/release --public-url .",
-    "dev": "parcel ./src/index.html --out-dir dist/debug --port 8080",
+    "build": "parcel build ./src/index.html --dist-dir dist/release --public-url .",
+    "dev": "parcel ./src/index.html --dist-dir dist/debug --port 8080",
     "test": "cross-env TS_NODE_PROJECT='./tsconfig.spec.json' nyc --reporter=lcov mocha",
     "prebuild": "rimraf dist"
   },
@@ -35,6 +35,7 @@
     "mocha": "^10.0.0",
     "nyc": "^15.1.0",
     "parcel": "^2.7.0",
+    "process": "^0.11.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",

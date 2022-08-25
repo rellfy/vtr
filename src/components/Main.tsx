@@ -1,4 +1,4 @@
-﻿import React, {useState, useEffect} from "react";
+﻿import {useState} from "react";
 import styled from "styled-components";
 import blue from "../../resources/blue.png";
 
@@ -7,28 +7,27 @@ type User = {
   username?: string
 };
 
-type State = {
-  user: User;
-  usernameLength: number;
-};
-
-interface Props extends State { }
-
-export default function Main(props: Props) {
+export default () => {
+    const [user, setUser] = useState<User>({
+      loggedIn: false
+    });
+    const login = (username: string) => setUser({
+      loggedIn: true,
+      username
+    });
     const loginButton = (
-        <Button data-testid={"main.button"} onClick={() => {
-            props.login("user")
-        }}>
+        <Button
+          data-testid={"main.button"}
+          onClick={() => login("user")}
+        >
             click to login
         </Button>
     );
-    
     return (
         <div>
             hello world<br/>
-            user: {JSON.stringify(props.user)}<br/>
-            { !props.user.loggedIn && loginButton }
-            { props.user.loggedIn && `username length: ${props.usernameLength}`}
+            user: {JSON.stringify(user)}<br/>
+            { !user.loggedIn && loginButton }
             <br/>
             this is an image:<br/>
             <img src={blue} alt="blue"/>
