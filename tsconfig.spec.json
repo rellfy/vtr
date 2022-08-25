@@ -1,0 +1,10 @@
+﻿{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "types": ["vite/client", "vite-plugin-svgr/client", "mocha", "chai"],
+        "module": "CommonJS"
+    },
+    "ts-node": {
+        "files": true
+    }
+}
