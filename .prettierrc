@@ -3,7 +3,7 @@
   "endOfLine": "auto",
   "htmlWhitespaceSensitivity": "css",
   "insertPragma": false,
-  "BracketSameLine": false,
+  "bracketSameLine": true,
   "jsxSingleQuote": false,
   "printWidth": 80,
   "proseWrap": "preserve",
