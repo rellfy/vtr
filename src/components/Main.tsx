@@ -1,20 +1,18 @@
 ﻿import React, {useState, useEffect} from "react";
 import styled from "styled-components";
 import blue from "../../resources/blue.png";
-import {Route, Switch, Link} from "react-router-dom";
-import {State as User} from "../store/user";
-import {CreateAction as CreateLoginAction} from "../store/user/login";
 
-export interface Dispatch {
-    login: CreateLoginAction,
-}
+type User = {
+  loggedIn: boolean,
+  username?: string
+};
 
-export interface State {
-    user: User,
-    usernameLength: number,
-}
+type State = {
+  user: User;
+  usernameLength: number;
+};
 
-interface Props extends State, Dispatch { }
+interface Props extends State { }
 
 export default function Main(props: Props) {
     const loginButton = (
@@ -33,7 +31,7 @@ export default function Main(props: Props) {
             { props.user.loggedIn && `username length: ${props.usernameLength}`}
             <br/>
             this is an image:<br/>
-            <img src={blue}/>
+            <img src={blue} alt="blue"/>
         </div>
     );
 }
