@@ -1,7 +1,9 @@
 ﻿# vtr
+
 Template for web clients using Typescript and React bundled with Parcel.
 
 ## Tooling
+
 - [Vite][vt] for bundling
 - [Typescript][ts]
 - [React][re]
