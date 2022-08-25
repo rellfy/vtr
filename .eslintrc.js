@@ -18,5 +18,6 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": "off",
     "no-unused-vars": "error",
     "comma-dangle": ["error", "always-multiline"],
+    "brace-style": ["error", "1tbs"],
   },
 };
