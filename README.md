@@ -1,23 +1,16 @@
-﻿# ptr
+﻿# vtr
 Template for web clients using Typescript and React bundled with Parcel.
 
 ## Tooling
-- [Parcel][pc] for bundling
+- [Vite][vt] for bundling
 - [Typescript][ts]
 - [React][re]
-- [Redux][red] for state management
 - [Styled components][sc]
-- [Jest][je] for testing, including:
-    - [ts-jest][je.ts]
-    - [@testing-library/jest-dom][je.do] 
-    - [@testing-library/react][je.re]
+- [Mocha][mo] and [Chai][ch] for testing
 
-[pc]: https://github.com/parcel-bundler/parcel
+[vt]: https://github.com/vitejs/vite
 [ts]: https://github.com/microsoft/TypeScript
 [re]: https://github.com/facebook/react
-[red]: https://github.com/reduxjs/redux
 [sc]: https://github.com/styled-components/styled-components
-[je]: https://github.com/facebook/jest
-[je.ts]: https://github.com/kulshekhar/ts-jest
-[je.do]: https://github.com/testing-library/jest-dom
-[je.re]: https://github.com/testing-library/react-testing-library
+[mo]: https://github.com/mochajs/mocha
+[ch]: https://github.com/chaijs/chai
