@@ -1,6 +1,6 @@
 ﻿# vtr
 
-Template for web clients using Typescript and React bundled with Parcel.
+Template for web clients using Typescript and React bundled with Vite.
 
 ## Tooling
 
