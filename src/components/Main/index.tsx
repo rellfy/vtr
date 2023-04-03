@@ -4,17 +4,17 @@ import blue from "../../../resources/blue.png";
 import classNames from "classnames";
 
 type User = {
-  loggedIn: boolean;
+  isLoggedIn: boolean;
   username?: string;
 };
 
 export default () => {
   const [user, setUser] = useState<User>({
-    loggedIn: false,
+    isLoggedIn: false,
   });
   const login = (username: string) =>
     setUser({
-      loggedIn: true,
+      isLoggedIn: true,
       username,
     });
   const loginButton = (
@@ -32,14 +32,14 @@ export default () => {
       <br />
       <span
         className={classNames({
-          [classes.success]: user.loggedIn,
-          [classes.warning]: !user.loggedIn
+          [classes.success]: user.isLoggedIn,
+          [classes.warning]: !user.isLoggedIn
         })}
       >
         user: {JSON.stringify(user)}
       </span>
       <br />
-      {!user.loggedIn && loginButton}
+      {!user.isLoggedIn && loginButton}
       <br />
       this is an image:
       <br />
