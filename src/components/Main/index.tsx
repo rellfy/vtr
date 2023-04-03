@@ -1,6 +1,7 @@
 ﻿import { useState } from "react";
-import styled from "styled-components";
-import blue from "../../resources/blue.png";
+import classes from "./Main.module.scss";
+import blue from "../../../resources/blue.png";
+import classNames from "classnames";
 
 type User = {
   loggedIn: boolean;
@@ -17,15 +18,26 @@ export default () => {
       username,
     });
   const loginButton = (
-    <Button data-testid={"main.button"} onClick={() => login("user")}>
+    <div
+      className={classes.button}
+      data-testid={"main.button"}
+      onClick={() => login("user")}
+    >
       click to login
-    </Button>
+    </div>
   );
   return (
     <div>
       hello world
       <br />
-      user: {JSON.stringify(user)}
+      <span
+        className={classNames({
+          [classes.success]: user.loggedIn,
+          [classes.warning]: !user.loggedIn
+        })}
+      >
+        user: {JSON.stringify(user)}
+      </span>
       <br />
       {!user.loggedIn && loginButton}
       <br />
@@ -35,7 +47,3 @@ export default () => {
     </div>
   );
 };
-
-const Button = styled.button`
-  color: grey;
-`;
